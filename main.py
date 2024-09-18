@@ -33,7 +33,7 @@ PELLET_COLOR = (255, 255, 255)
 # Load images
 PACMAN_IMG = load_image('assets/pacman.png', (CELL_SIZE, CELL_SIZE))
 GHOST_IMG = load_image('assets/ghost.png', (CELL_SIZE, CELL_SIZE))
-WALL_IMG = load_image('assets/wall.png', (CELL_SIZE, CELL_SIZE))
+WALL_IMG = load_image('assets/wall2.png', (CELL_SIZE, CELL_SIZE))
 
 class Game:
     def __init__(self):
@@ -129,15 +129,15 @@ class Game:
             if event.type == pygame.QUIT:
                 self.running = False
             elif event.type == pygame.KEYDOWN:
-                print('fuck')
+                #print('fuck')
                 if event.key == pygame.K_h:
-                    print('lkkk')
+                    #print('lkkk')
                     self.set_auto_mode(True)
                 elif event.key == pygame.K_j:
-                    print('okkk')
+                    #print('okkk')
                     self.set_auto_mode(False)
-                else:
-                    print('----')
+                # else:
+                #     print('----')
 
         if not self.auto_mode:
             keys = pygame.key.get_pressed()
